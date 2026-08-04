@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARA CAMPO EAS - Proveeduría Rural</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2D3732;
+            --secondary-color: #556B2F;
+            --bg-light: #F9F9F6;
+            --text-dark: #2B2B2B;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p.tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .hero h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .highlights {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .step-list {
+            list-style: decimal inside;
+            padding-left: 0;
+        }
+
+        .step-list li {
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
+
+        .cta-section {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 1rem;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25D366;
+            color: var(--white);
+            padding: 0.8rem 1.8rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1EBE5D;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PARA CAMPO EAS</h1>
+        <p class="tagline">Proveeduría Rural</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Hero Banner -->
+        <section class="hero">
+            <h2>Todo lo que tu cocina necesita, en un solo proveedor</h2>
+            <p>Somos una proveeduría rural especializada en el abastecimiento de productos comestibles para cocina y más, trabajando exclusivamente sobre pedido y adaptándonos a cada cliente.</p>
+            <div class="highlights">
+                <span class="tag">Atención Personalizada</span>
+                <span class="tag">Flexibilidad</span>
+                <span class="tag">Servicio Confiable</span>
+            </div>
+        </section>
+
+        <!-- Contenido en Tarjetas -->
+        <div class="grid">
+            <!-- Qué proveemos -->
+            <div class="card">
+                <h3>¿Qué proveemos?</h3>
+                <ul>
+                    <li>Productos comestibles para cocina</li>
+                    <li>Alimentos secos y de despensa</li>
+                    <li>Insumos esenciales para el día a día</li>
+                    <li>Taller, Talabartería y Ferretería rural</li>
+                    <li>Pedidos armados de forma personalizada</li>
+                </ul>
+            </div>
+
+            <!-- Modo de Trabajo -->
+            <div class="card">
+                <h3>Modo de Trabajo</h3>
+                <ol class="step-list">
+                    <li>Recibimos solicitudes por WhatsApp o correo.</li>
+                    <li>Elaboramos una propuesta personalizada.</li>
+                    <li>Esperamos la confirmación del cliente.</li>
+                    <li>Coordinamos la entrega en puerta o en destino.</li>
+                </ol>
+            </div>
+
+            <!-- Por qué elegirnos -->
+            <div class="card">
+                <h3>¿Por qué elegirnos?</h3>
+                <ul>
+                    <li>Atención personalizada en cada pedido.</li>
+                    <li>Nos adaptamos a presupuestos y tiempos.</li>
+                    <li>Servicio confiable, seguro y organizado.</li>
+                    <li>Soluciones prácticas e integrales para el campo.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Nuestro Compromiso -->
+        <section class="hero" style="border-top: 4px solid var(--secondary-color);">
+            <h2>Nuestro Compromiso</h2>
+            <p>Brindar un servicio cercano y eficiente, asegurando un abastecimiento confiable para la cocina, sin faltantes y sin complicaciones, ajustado a las necesidades de cada cliente.</p>
+        </section>
+
+        <!-- Contacto / CTA -->
+        <section class="cta-section">
+            <h2>Contáctanos y armamos tu pedido a medida</h2>
+            <p><strong>Teléfono / WhatsApp:</strong> +595 981 577 658</p>
+            <p><strong>Correo electrónico:</strong> paracampoeas@gmail.com</p>
+            <p><strong>Ubicación:</strong> Asunción – Guido Spano 2463</p>
+            
+            <a href="https://wa.me/595981577658?text=Hola,%20quisiera%20solicitar%20un%20pedido%20a%20medida" target="_blank" class="btn-whatsapp">
+                Contactar por WhatsApp
+            </a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; PARA CAMPO EAS - Proveeduría Rural. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
